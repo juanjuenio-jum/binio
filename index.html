@@ -621,7 +621,7 @@ document.addEventListener('focusin', e=>{
     document.getSelection().selectAllChildren(e.target);
   }
 });
-
+document.getElementById('r0').addEventListener('input', (e) => { document.getElementById('r1').textContent = e.target.value; });
 render();
 </script>
 </body>
